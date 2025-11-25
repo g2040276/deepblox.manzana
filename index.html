@@ -6,6 +6,67 @@
     <title>Manzana Deep Blox Interface</title>
 </head>
 <body>
+Creado por Manzana.
+</a>
+<style>
+  body {
+    background-color: #000;
+    color: #0f0;
+    font-family: "Courier New", monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+
+  .titulo {
+    font-size: 40px;
+    text-shadow: 0 0 10px #0f0;
+    animation: parpadeo 1.2s infinite alternate;
+  }
+
+  @keyframes parpadeo {
+    from { opacity: 1; }
+    to { opacity: 0.3; }
+  }
+
+  .boton {
+    margin-top: 40px;
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 2px solid #0f0;
+    color: #0f0;
+    font-size: 18px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #0f0;
+    transition: 0.3s;
+  }
+
+  .boton:hover {
+    background-color: #0f0;
+    color: #000;
+    box-shadow: 0 0 15px #0f0;
+  }
+
+  .ruido {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3f/TV_static.gif');
+    background-size: cover;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+  }
+</style>
+
+<div class="ruido"></div>
+<div class="titulo">ACCESO RESTRINGIDO</div>
+<button class="boton">Entrar</button>
+
 </style>
   <a href="hacker.html">
   <button class="botoncito">Entrar a la Deep Blox, Juegos Normales</button>
